@@ -11,7 +11,7 @@ def get_estimated_price(location,sqft,BHK,bath):
         loc_index = __data_columns.index(location.lower())
     except:
         loc_index = -1
-
+ 
     x = np.zeros(len(__data_columns))
     x[0] = sqft
     x[1] = bath
